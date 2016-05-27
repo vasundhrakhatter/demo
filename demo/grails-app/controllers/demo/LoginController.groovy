@@ -23,6 +23,7 @@ class LoginController {
     }
 
     def signIn(){
+        println "sign in"
         LoginCO loginCO = new LoginCO()
         render(view:"/demo/signIn",model: [loginCO: loginCO])
     }
